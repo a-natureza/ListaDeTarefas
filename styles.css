@@ -65,7 +65,7 @@ li {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 4px;
-    display: flexbox;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -77,4 +77,26 @@ li.done .task-text {
 
 li input[type="checkbox"] {
     margin-right: 10px;
+}
+
+.task-text {
+    flex-grow: 1;
+    text-align: left;
+}
+
+li .buttons {
+    display: flex;
+    gap: 5px;
+}
+
+li .buttons button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li .buttons button:hover {
+    background-color: #bbb;
 }
