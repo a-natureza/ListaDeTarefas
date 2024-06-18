@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Lista de tarefas com manipulação do DOM e eventos"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Tarefas, Lista de Tarefas"
+    />
+    <meta name="author" content="Alana Daniele" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Lista de Tarefas</h1>
+      </header>
+      <main>
+        <form id="task-form" onsubmit="return false;">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Adicione uma tarefa"
+          />
+          <button type="button" id="add-task-btn">+</button>
+        </form>
+        <section>
+          <ul id="task-list"></ul>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
